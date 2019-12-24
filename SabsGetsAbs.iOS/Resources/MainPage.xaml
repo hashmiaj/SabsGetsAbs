@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SabsGetsAbs.MainPage"
+             BackgroundColor="#D3D3D3">
+
+    <Grid x:Name="MainGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="BackgroundPic"
+            Source="proposalpic.JPG"
+            Aspect="Fill"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Grid.RowSpan="4"
+            Grid.ColumnSpan="1"/>
+
+
+        <Label x:Name="TitleLabel"
+                Text="Sabiha + Abdullah"
+                TextColor="Black"
+                FontSize="40"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="0">
+
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String"
+                            Android="Allegratta_Personal_Use.ttf#Allegratta Personal Use"
+                            iOS="Allegratta Personal Use"/>
+            </Label.FontFamily>
+
+        </Label>
+
+
+        <Label Text="Scan!"
+                TextColor="Black"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Grid.Row="1"
+                Grid.Column="0"/>
+
+        <Label x:Name="Barcode"
+                Text="12"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Grid.Row="2"
+                Grid.Column="0"/>
+
+        <Label x:Name="GuestName"
+                Text="Names"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                Grid.Row="3"
+                Grid.Column="0"/>
+
+
+    </Grid>
+
+</ContentPage>

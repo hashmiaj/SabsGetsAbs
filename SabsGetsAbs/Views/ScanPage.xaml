@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SabsGetsAbs.Views.ScanPage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="25*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Image x:Name="BackgroundImage"
+                   Aspect="Fill"
+                   Source="proposalpic.JPG"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Grid.RowSpan="4"
+                   Grid.ColumnSpan="1">
+            </Image>
+
+            <Label Text="Abdullah + Sabiha"
+                   FontSize="40"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Grid.Row="0"
+                   Grid.Column="0">
+
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String"
+                                Android="Allegratta_Personal_Use.ttf#Allegratta Personal Use"
+                                iOS="Allegratta Personal Use"/>
+                </Label.FontFamily>
+
+            </Label>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
